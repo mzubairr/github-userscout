@@ -3,8 +3,8 @@ import githubLogo from "@/app/githubLogo.svg"
 
 export default function Navbar() {
     return (
-        <header className="text-white pt-5">
-            <div className="flex gap-1 items-center">
+        <header className="absolute top-0 w-full text-white pt-5">
+            <div className="max-w-5/6 m-auto flex gap-1 items-center">
                 <Image
                     src={githubLogo}
                     width={30}

@@ -1,11 +1,8 @@
-import Navbar from "@/component/Navbar";
-
 export default function Home() {
   return (
     <>
       <div className="bg-img">
         <div className="max-w-5/6 m-auto px-2 flex flex-col justify-around min-h-[100vh]">
-          <Navbar />
           <main className="text-white min-h-[90vh] flex items-center">
             <section id="user-section">
               <div>
