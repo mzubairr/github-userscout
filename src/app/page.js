@@ -24,20 +24,20 @@ export default function Home() {
           <main className="text-white min-h-[90vh] flex items-center">
             <section id="user-section">
               <div>
-                <h1 className="text-4xl font-bold w-[40%]">A simpler way to explore your GitHub profile and repositories.</h1>
+                <h1 className="sm:text-4xl font-bold text-center sm:text-start sm:w-[40%]">A simpler way to explore your GitHub profile and repositories.</h1>
                 <form className="mt-7" onSubmit={formHandler}>
-                  <div className="flex w-full max-w-sm items-center space-x-2">
-                    <Input id="username" ref={user} className="bg-[#4E5E7E] placeholder:text-white" type="text" placeholder="Enter a github username..." />
-                    <Button className="bg-[#00C4F5] cursor-pointer" type="submit">View</Button>
+                  <div className="flex justify-center sm:justify-start flex-wrap sm:flex-nowrap items-center gap-y-3 w-full space-x-0 sm:space-x-2">
+                    <Input id="username" ref={user} className="bg-[#4E5E7E] placeholder:text-white sm:max-w-sm" type="text" placeholder="Enter a github username..." />
+                    <Button className="bg-[#00C4F5] cursor-pointer w-full sm:w-20" type="submit">View</Button>
                   </div>
                 </form>
               </div>
               <div className="mt-8">
                 Amazing developers
-                <div className="flex items-center gap-3 mt-2">
-                  <Button onClick={userHandler} className="bg-[#4E5E7E] cursor-pointer">mzubairr</Button>
-                  <Button onClick={userHandler} className="bg-[#4E5E7E] cursor-pointer">mabdullahjs</Button>
-                  <Button onClick={userHandler} className="bg-[#4E5E7E] cursor-pointer">shehza-d</Button>
+                <div className="flex flex-wrap sm:flex-nowrap items-center gap-3 mt-2">
+                  <Button onClick={userHandler} className="bg-[#4E5E7E] cursor-pointer w-full sm:w-20">mzubairr</Button>
+                  <Button onClick={userHandler} className="bg-[#4E5E7E] cursor-pointer w-full sm:w-20">mabdullahjs</Button>
+                  <Button onClick={userHandler} className="bg-[#4E5E7E] cursor-pointer w-full sm:w-20">shehza-d</Button>
                 </div>
               </div>
             </section>
