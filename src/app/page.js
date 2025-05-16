@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+
 export default function Home() {
   return (
     <>
@@ -7,17 +10,19 @@ export default function Home() {
             <section id="user-section">
               <div>
                 <h1 className="text-4xl font-bold w-[40%]">A simpler way to explore your GitHub profile and repositories.</h1>
-                <form className="flex gap-2 mt-7">
-                  <input className="bg-[#4E5E7E] rounded-[4px] p-1.5 w-[25%]" type="text" name="username" id="username" placeholder="Enter a github username..." />
-                  <input className="bg-[#00C4F5] cursor-pointer rounded-[4px] py-1 px-4" type="submit" value="View" />
+                <form className="mt-7">
+                  <div className="flex w-full max-w-sm items-center space-x-2">
+                    <Input id="username" className="bg-[#4E5E7E] placeholder:text-white" type="text" placeholder="Enter a github username..." />
+                    <Button className="bg-[#00C4F5] cursor-pointer" type="submit">View</Button>
+                  </div>
                 </form>
               </div>
               <div className="mt-8">
                 Amazing developers
                 <div className="flex items-center gap-3 mt-2">
-                  <button className="bg-[#4E5E7E] text-gray-300 rounded-[6px] py-0.5 px-1 cursor-pointer">mzubairr</button>
-                  <button className="bg-[#4E5E7E] text-gray-300 rounded-[6px] py-0.5 px-1 cursor-pointer">mabdullahjs</button>
-                  <button className="bg-[#4E5E7E] text-gray-300 rounded-[6px] py-0.5 px-1 cursor-pointer">shehza-d</button>
+                  <Button className="bg-[#4E5E7E] cursor-pointer">mzubairr</Button>
+                  <Button className="bg-[#4E5E7E] cursor-pointer">mabdullahjs</Button>
+                  <Button className="bg-[#4E5E7E] cursor-pointer">shehza-d</Button>
                 </div>
               </div>
             </section>
